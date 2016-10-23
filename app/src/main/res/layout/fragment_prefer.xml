@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.hardwork.fg607.jystocks.view.PreferFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <com.hardwork.fg607.jystocks.view.SHCView
+            android:id="@+id/sz"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:titleText="上证"
+            app:titleTextColor="@android:color/black"
+            app:titleTextSize="16sp"
+            app:pointNum="9999.99"
+            app:pointTextSize="16sp"
+            app:changeNum="99.99"
+            app:changeRatio="99.99"
+            app:changeTextSize="13sp"
+            app:riseColor="@color/riseColor"
+            app:fallColor="@color/fallColor"/>
+
+        <com.hardwork.fg607.jystocks.view.SHCView
+            android:id="@+id/hs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:titleText="沪深"
+            app:titleTextColor="@android:color/black"
+            app:titleTextSize="16sp"
+            app:pointNum="9999.99"
+            app:pointTextSize="16sp"
+            app:changeNum="99.99"
+            app:changeRatio="99.99"
+            app:changeTextSize="13sp"
+            app:riseColor="@color/riseColor"
+            app:fallColor="@color/fallColor"/>
+
+        <com.hardwork.fg607.jystocks.view.SHCView
+            android:id="@+id/cy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:titleText="创业"
+            app:titleTextColor="@android:color/black"
+            app:titleTextSize="16sp"
+            app:pointNum="9999.99"
+            app:pointTextSize="16sp"
+            app:changeNum="99.99"
+            app:changeRatio="99.99"
+            app:changeTextSize="13sp"
+            app:riseColor="@color/riseColor"
+            app:fallColor="@color/fallColor"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateSHC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateSHC"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新"
+            android:textColor="@color/text_black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="涨幅"
+            android:textColor="@color/text_black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="涨跌"
+            android:textColor="@color/text_black"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <com.hardwork.fg607.jystocks.view.MyRecyclerView
+        android:id="@+id/stock_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

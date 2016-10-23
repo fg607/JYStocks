@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hardwork.fg607.jystocks.MainActivity">
+
+  <com.hardwork.fg607.jystocks.view.MyViewPager
+      android:id="@+id/viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_layout"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_layout"
+        android:orientation="horizontal">
+
+        <com.hardwork.fg607.jystocks.view.BottomMenuBtn
+            style="@style/BottomBtnStyle"
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:textColorPressed="@color/colorAccent"
+            app:imageNormal="@drawable/search_normal_img"
+            app:imagePressed="@drawable/search_select_img"
+            app:titleText="首页"/>
+
+        <com.hardwork.fg607.jystocks.view.BottomMenuBtn
+            style="@style/BottomBtnStyle"
+            android:id="@+id/market"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:textColorPressed="@color/colorAccent"
+            app:imageNormal="@drawable/hangqing_normal_img"
+            app:imagePressed="@drawable/hangqing_select_img"
+            app:titleText="行情"/>
+
+        <com.hardwork.fg607.jystocks.view.BottomMenuBtn
+            style="@style/BottomBtnStyle"
+            android:id="@+id/prefer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:textColorPressed="@color/colorAccent"
+            app:imageNormal="@drawable/zixuan_normal_img"
+            app:imagePressed="@drawable/zixuan_select_img"
+           app:titleText="自选"/>
+
+        <com.hardwork.fg607.jystocks.view.BottomMenuBtn
+            style="@style/BottomBtnStyle"
+            android:id="@+id/trade"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:textColorPressed="@color/colorAccent"
+            app:imageNormal="@drawable/trade_normal_img"
+            app:imagePressed="@drawable/trade_select_img"
+            app:titleText="交易"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

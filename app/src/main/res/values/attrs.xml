@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleText" format="string" />
+    <attr name="titleTextSize" format="dimension" />
+    <attr name="textColorPressed" format="color" />
+    <attr name="imageNormal" format="reference" />
+    <attr name="imagePressed" format="reference" />
+
+    <declare-styleable name="BottomMenuBtn">
+        <attr name="titleText" />
+        <attr name="titleTextSize" />
+        <attr name="textColorPressed" />
+        <attr name="imageNormal" />
+        <attr name="imagePressed" />
+    </declare-styleable>
+    
+    <attr name="pointNum" format="float"/>
+    <attr name="changeNum" format="float"/>
+    <attr name="changeRatio" format="float"/>
+    <attr name="riseColor" format="color"/>
+    <attr name="fallColor" format="color"/>
+    <attr name="pointTextSize" format="dimension"/>
+    <attr name="changeTextSize" format="dimension"/>
+
+    <declare-styleable name="SHCView">
+        <attr name="titleText"/>
+        <attr name="titleTextSize"/>
+        <attr name="titleTextColor"/>
+        <attr name="pointNum"/>
+        <attr name="changeNum"/>
+        <attr name="changeRatio"/>
+        <attr name="riseColor"/>
+        <attr name="fallColor"/>
+        <attr name="pointTextSize"/>
+        <attr name="changeTextSize"/>
+    </declare-styleable>
+
+</resources>
